@@ -45,8 +45,8 @@
                     <a-card hoverable>
                         <div slot="title">
                             
-                            <a-tag v-if="dbInbounds.length < 3" color="cyan"><a-button type="primary" icon="plus" @click="openAddInbound"></a-button></a-tag>
-                            <a-tag v-else color="red"></a-tag>
+                          <a-button v-if="dbInbounds.length < 3" type="primary" icon="plus" @click="openAddInbound"></a-button>
+                          
                         </div>
 <!--                        <a-input v-model="searchKey" placeholder="搜索" autofocus style="max-width: 300px"></a-input>-->
                         <a-table :columns="columns" :row-key="dbInbound => dbInbound.id"
