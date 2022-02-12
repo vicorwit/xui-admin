@@ -35,7 +35,7 @@
                                 <a-tag color="green">[[ sizeFormat(total.up + total.down) ]]</a-tag>
                             </a-col>
                             <a-col :xs="24" :sm="24" :lg="12">
-                                User：
+                                入站数量：
                                 <a-tag color="green">[[ dbInbounds.length ]]</a-tag>
                             </a-col>
                         </a-row>
@@ -44,9 +44,7 @@
                 <transition name="list" appear>
                     <a-card hoverable>
                         <div slot="title">
-                            
-                          <a-button type="primary" icon="plus" @click="openAddInbound"></a-button>
-                          
+                            <a-button type="primary" icon="plus" @click="openAddInbound"></a-button>
                         </div>
 <!--                        <a-input v-model="searchKey" placeholder="搜索" autofocus style="max-width: 300px"></a-input>-->
                         <a-table :columns="columns" :row-key="dbInbound => dbInbound.id"
